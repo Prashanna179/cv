@@ -1,0 +1,91 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form method="GET" enctype="multipart/form-data">  <!--action="data process program.php"-->
+            <p>
+                <label for="username">Username</label> :<br>
+                <input type="text" required name="username" id="username"placeholder="enter the username" size="9" maxlength="20">
+            </p>
+            <h4>Password :<br><input type="password" name="pwd" placeholder="enter the password"> </h4>
+            <h4>Mail :<br><input type="email" name="email" placeholder="enter the email"> </h4>
+            <h4>age :<br><input type="number" name="age" placeholder="enter the age" min="18" max="99"> </h4>
+            <p>
+                <label for="dob">Date of Birth</label> :<br>
+                <input type="datetime-local" name="dob" id="dob">
+            </p>
+            <p>
+                <label for="price">PriceRange</label> :<br>
+                <input type="range" name="price" id="price" min=0 max=1000 step="10">
+            </p>
+            <p>
+                <label for="web">Website</label> :<br>
+                <input type="url"  name="web" id="web" >
+            </p>
+
+            <p><input type="submit" value = "send" name=sub></p>
+            <p>Comments <br>
+                <textarea name="comments" cols="25"> </textarea>
+            </p>
+            <p>Is this is  <br>
+                <input type="radio" name="request_type" value="sales" checked>Sales Request ?
+                <input type="radio" name="request_type"  value="service">Service Request 
+
+            </p>
+
+            <p>Hobbies  <br>
+                <input type="checkbox" name="Hobbies[]" value="gym" checked>Gymming
+                <input type="checkbox" name="Hobbies[]"  value="cric">Cricket 
+                <input type="checkbox" name="Hobbies[]"  value="cycle">Cycling
+            </p>
+
+            <p>
+                Select date <br>
+                <select name="date">
+                    <option value=>Select date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4"selected>4</option>
+                </select>
+
+            </p>
+            <p>
+                Select Number <br>
+                <select name="number" multiple>
+                    <option value=>Select date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4"selected>4</option>
+                </select>
+
+            </p>
+            <fieldset>
+                <legend>Educationdetails</legend>
+            <p>
+                Your Name:<br>
+                <input type="text" name="name" >
+                <br><br>
+                Your Education:<br>
+                <select name="edu">
+                    <option value="BE">B.E</option>
+                    <option value="Btech">BTech</option>
+                    <option value="bca">B.C.A</option>
+                    <option value="Bsc">B.sc</option>
+                </select>
+                <br>
+                Your Resume<br>
+                <input type="file"  name="resume">
+            </p>
+
+
+        </fieldset>
+
+            
+
+            
+        </form>
+    </body>
+</html>
